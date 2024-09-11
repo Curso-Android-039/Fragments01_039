@@ -47,35 +47,32 @@ public class QuestionFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-       mBinding.radiogroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-           @Override
-           public void onCheckedChanged(RadioGroup radioGroup, int i) {
+        mBinding.radiogroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
 
 
-               int index = mBinding.radiogroup.indexOfChild(mBinding.radiogroup.findViewById(i));
+                int index = mBinding.radiogroup.indexOfChild(mBinding.radiogroup.findViewById(i));
 
-               switch ( index){
+                switch (index) {
 
-                   case 0:
-                       mBinding.TextviewRes.setText("Si lo conozco");
-                       break;
+                    case 0:
+                        mBinding.TextviewRes.setText("Si lo conozco");
+                        break;
 
-                   case 1: mBinding.TextviewRes.setText("no lo conozco");
-                   break;
+                    case 1:
+                        mBinding.TextviewRes.setText("no lo conozco");
+                        break;
 
-                   default:
-                  break;
-
-
-
-
-               }
+                    default:
+                        break;
 
 
+                }
 
 
-           }
-       });
+            }
+        });
 
 
     }

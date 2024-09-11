@@ -5,4 +5,7 @@
     <string name="pregunta">Conoces a este personaje</string>
     <string name="si"> si lo conozco </string>
     <string name="no">no lo conozco</string>
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+
 </resources>
